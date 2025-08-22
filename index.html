@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEPLA631: Vytvárame hry, meníme realitu.</title>
+    <!-- Používa Tailwind CSS pre jednoduché a elegantné styly -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Používa font Inter z Google Fonts pre lepšiu čitateľnosť -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            background-image: radial-gradient(at 50% 0%, #1a202c 0%, #0a0a0a 70%);
+            color: #E5E7EB;
+        }
+        .section {
+            padding: 80px 20px;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .shadow-glow {
+            box-shadow: 0 0 10px rgba(0, 191, 255, 0.4), 0 0 20px rgba(0, 191, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-200">
+
+    <!-- Navigácia -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="flex items-center space-x-2 text-2xl font-bold text-white transition-transform duration-200 hover:scale-105">
+                <span>🎮</span>
+                <span>GAMEPLA631</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors duration-200">O nás</a>
+                <a href="#services" class="nav-link text-gray-300 hover:text-white transition-colors duration-200">Čo robíme</a>
+                <a href="#form" class="nav-link text-gray-300 hover:text-white transition-colors duration-200">Pridaj sa k nám</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hlavná sekcia (Hero) -->
+    <section id="hero" class="section pt-32 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
+                Vytvárame herné svety.
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-light text-sky-400 mb-8">
+                S vášňou a talentom meníme realitu na webové stránky a hry na Roblox.
+            </h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10">
+                Sme tím vizionárov, ktorí veria, že kreatívne nápady majú silu premeniť sa na digitálne zážitky, ktoré si ľudia zamilujú.
+            </p>
+            <a href="#form" class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-sky-700 transition-colors duration-200 transform hover:scale-105">
+                Chcem sa pridať
+            </a>
+        </div>
+    </section>
+
+    <!-- Sekcia O nás -->
+    <section id="about" class="section bg-gray-900 border-t border-b border-gray-800">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-4xl font-bold text-white mb-4">Kto sme?</h3>
+                <p class="text-gray-400 mb-4">
+                    GAMEPLA631 nie je len spoločnosť, je to komunita. Sme skupina kreatívnych mysliteľov, programátorov a dizajnérov, ktorí sa zjednotili s jedným cieľom: vytvárať nezabudnuteľné digitálne zážitky. Zameriavame sa na vývoj pútavých hier na platforme Roblox a tvorbu moderných, responzívnych webových stránok.
+                </p>
+                <p class="text-gray-400">
+                    Naša kultúra je postavená na spolupráci, inovácii a neustálom učení sa. U nás sa každý hlas počíta a každý nápad má priestor.
+                </p>
+            </div>
+            <div class="relative w-full h-80 rounded-xl overflow-hidden shadow-2xl">
+                <img src="https://placehold.co/800x600/1e293b/a0aec0?text=GAMEPLA631" alt="Tím GAMEPLA631 pri práci" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcia Čo robíme -->
+    <section id="services" class="section">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">Naše služby</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Karta pre Roblox -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 shadow-xl transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-glow">
+                    <div class="text-5xl mb-4 text-center">🕹️</div>
+                    <h4 class="text-2xl font-semibold text-white mb-2 text-center">Vývoj hier na Roblox</h4>
+                    <p class="text-gray-400 text-center">
+                        Od konceptu až po vydanie, tvoríme pútavé a zábavné hry, ktoré oslovujú milióny hráčov. Používame Roblox Studio, LUA a najnovšie techniky.
+                    </p>
+                </div>
+                <!-- Karta pre Web -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 shadow-xl transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-glow">
+                    <div class="text-5xl mb-4 text-center">🌐</div>
+                    <h4 class="text-2xl font-semibold text-white mb-2 text-center">Webové stránky a aplikácie</h4>
+                    <p class="text-gray-400 text-center">
+                        Navrhujeme a vyvíjame moderné a responzívne webové stránky, ktoré sú rýchle, bezpečné a krásne. Používame technológie ako HTML, CSS, JavaScript, React a ďalšie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcia formulár (Pridaj sa k nám) -->
+    <section id="form" class="section bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="form-container w-full mx-auto p-8 rounded-2xl border border-gray-700 bg-gray-800 shadow-lg">
+                <div class="text-center mb-8">
+                    <h3 class="text-4xl font-bold text-white mb-2">Pridaj sa k tímu GAMEPLA631</h3>
+                    <p class="text-gray-400">Vyplň tento formulár a ukáž nám, čo v tebe je!</p>
+                </div>
+
+                <!-- Formulár teraz posiela dáta na Getform.io -->
+                <form id="applicationForm" action="https://getform.io/f/bvrmwxdb" method="POST" class="space-y-6">
+                    <!-- Pole pre meno -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-300">Meno a priezvisko</label>
+                        <input type="text" id="fullName" name="fullName" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+
+                    <!-- Pole pre email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">E-mail</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+
+                    <!-- Pole pre Discord -->
+                    <div>
+                        <label for="discord" class="block text-sm font-medium text-gray-300">Discord účet (voliteľné)</label>
+                        <input type="text" id="discord" name="discord" class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500" placeholder="napr. tvoje_meno#1234">
+                    </div>
+
+                    <!-- Pole pre dátum narodenia -->
+                    <div>
+                        <label for="dob" class="block text-sm font-medium text-gray-300">Dátum narodenia</label>
+                        <input type="date" id="dob" name="dob" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500">
+                        <p id="dobError" class="mt-1 text-sm text-red-400 hidden">Musíš mať aspoň 15 rokov.</p>
+                    </div>
+
+                    <!-- Pole pre pozíciu -->
+                    <div>
+                        <label for="position" class="block text-sm font-medium text-gray-300">Pozícia, o ktorú máš záujem</label>
+                        <select id="position" name="position" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500">
+                            <option value="" disabled selected>Vyber pozíciu</option>
+                            <option value="Programátor/ka">Programátor/ka (Roblox Studio / LUA, JS, Python)</option>
+                            <option value="3D modelář/ka">3D modelář/ka (Blender, C4D atd.)</option>
+                            <option value="Grafický/á designér/ka">Grafický/á designér/ka (Photoshop, Figma)</option>
+                            <option value="Animátor/ka">Animátor/ka</option>
+                            <option value="Level designer/ka">Level designer/ka</option>
+                            <option value="Tester/ka hier">Tester/ka hier</option>
+                            <option value="Projektový/á manažer/ka">Projektový/á manažér/ka</option>
+                            <option value="Iné">Iné</option>
+                        </select>
+                    </div>
+
+                    <!-- Pole pre portfolio -->
+                    <div>
+                        <label for="portfolio" class="block text-sm font-medium text-gray-300">Portfolio a ukážky tvojej práce (odkazy)</label>
+                        <textarea id="portfolio" name="portfolio" rows="4" class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500" placeholder="Sem vlož odkazy na svoje projekty, GitHub, Behance, atď."></textarea>
+                    </div>
+
+                    <!-- Pole pre motiváciu -->
+                    <div>
+                        <label for="motivation" class="block text-sm font-medium text-gray-300">Prečo chceš pracovať pre GAMEPLA631?</label>
+                        <textarea id="motivation" name="motivation" rows="4" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500" placeholder="Povedz nám, čo ťa motivuje..."></textarea>
+                    </div>
+
+                    <!-- Pole pre dovednosti -->
+                    <div>
+                        <label for="skills" class="block text-sm font-medium text-gray-300">Povedz nám o svojich dovednostiach a skúsenostiach</label>
+                        <textarea id="skills" name="skills" rows="4" required class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-sky-500 focus:border-sky-500" placeholder="Popíš svoje skúsenosti s vývojom hier alebo webov..."></textarea>
+                    </div>
+
+                    <!-- Súhlas so spracovaním údajov -->
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="consent" name="consent" type="checkbox" required class="focus:ring-sky-500 h-4 w-4 text-sky-600 border-gray-300 rounded">
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="consent" class="font-medium text-gray-300">Súhlasím so spracovaním osobných údajov</label>
+                        </div>
+                    </div>
+
+                    <!-- Tlačidlo na odoslanie -->
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-lg font-medium text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors duration-200">Odoslať žiadosť</button>
+                    </div>
+
+                    <!-- Správa o úspešnom odoslaní alebo chybová správa -->
+                    <div id="messageBox" class="p-4 rounded-lg text-center hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8 text-center text-gray-400">
+        <p>
+            © 2024 GAMEPLA631. Všetky práva vyhradené.
+        </p>
+        <p class="mt-2 text-sm">
+            Kontakt: <a href="mailto:kralhororoviek@gmail.com" class="text-sky-400 hover:underline">kralhororoviek@gmail.com</a> | Tel: <a href="tel:+421951632704" class="text-sky-400 hover:underline">+421 951 632 704</a>
+        </p>
+    </footer>
+
+    <script>
+        // Získanie elementov formulára
+        const form = document.getElementById('applicationForm');
+        const messageBox = document.getElementById('messageBox');
+        const dobError = document.getElementById('dobError');
+
+        // Funkcia na zobrazenie správ
+        const displayMessage = (message, isSuccess = true) => {
+            messageBox.textContent = message;
+            messageBox.classList.remove('hidden');
+            if (isSuccess) {
+                messageBox.classList.add('bg-green-600', 'text-white');
+                messageBox.classList.remove('bg-red-600', 'text-white');
+            } else {
+                messageBox.classList.add('bg-red-600', 'text-white');
+                messageBox.classList.remove('bg-green-600', 'text-white');
+            }
+        };
+
+        // Pridanie poslucháča udalosti pre odoslanie formulára
+        form.addEventListener('submit', async (event) => {
+            // Zabránime predvolenému odoslaniu formulára na presmerovanie
+            event.preventDefault(); 
+            
+            // Kontrola veku
+            const dobInput = document.getElementById('dob').value;
+            const dob = new Date(dobInput);
+            const today = new Date();
+            const age = today.getFullYear() - dob.getFullYear();
+            const monthDiff = today.getMonth() - dob.getMonth();
+            const dayDiff = today.getDate() - dob.getDate();
+
+            if (age < 15 || (age === 15 && (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)))) {
+                dobError.classList.remove('hidden');
+                displayMessage('Pre odoslanie žiadosti musíš mať aspoň 15 rokov.', false);
+                return;
+            } else {
+                dobError.classList.add('hidden');
+            }
+            
+            // Odoslanie formulára pomocou Fetch API
+            const formData = new FormData(form);
+            const action = form.action;
+
+            try {
+                const response = await fetch(action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    displayMessage('Žiadosť bola úspešne odoslaná! Ďakujeme ti za záujem.', true);
+                    form.reset(); // Vyčistíme formulár po úspešnom odoslaní
+                } else {
+                    const errorData = await response.json();
+                    if (errorData.error) {
+                        displayMessage(`Chyba: ${errorData.error}`, false);
+                    } else {
+                        displayMessage('Pri odosielaní formulára sa vyskytla chyba. Skús to prosím neskôr.', false);
+                    }
+                }
+            } catch (error) {
+                console.error('Chyba pri odosielaní formulára:', error);
+                displayMessage('Pripojenie k serveru sa nepodarilo. Skús to prosím neskôr.', false);
+            }
+        });
+    </script>
+</body>
+</html>
